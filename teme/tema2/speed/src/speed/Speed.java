@@ -17,18 +17,24 @@ public class Speed {
 	    }
 
 	    public static int speed1(String opt) {
-	        if (opt.equalsIgnoreCase("oras"))
+	        if (opt.equalsIgnoreCase("oras")) {
 	            return 50;
-	        else if (opt.equalsIgnoreCase("zona-rezidentiala"))
+	        }
+	        else{
+	        	if (opt.equalsIgnoreCase("zona-rezidentiala")) {        	
 	            return 30;
-	        else if (opt.equalsIgnoreCase("drum-expres"))
-	            return 100;
-	        else if (opt.equalsIgnoreCase("autostrada"))
-	            return 130;
-	        else return 0;
-	    } 
-
-	    public static int speed2(String opt) {
+	        	}
+	        else {
+	        	if (opt.equalsIgnoreCase("drum-expres")) {
+	            return 100;}
+	        else { 
+	        	if (opt.equalsIgnoreCase("autostrada")) {
+	            return 130;}
+	        else 
+	        {return 0; 
+	    }}}}	    
+	    }        
+	        public static int speed2(String opt) {
 	    
 	    	switch(opt) {
 	        case "oras":
@@ -43,14 +49,14 @@ public class Speed {
 	        return 0;
 	    }
 	    public static int speed3(String opt) {
-	        if(opt.equalsIgnoreCase("oras"))
-	            return 50 ;
-	        if(opt.equalsIgnoreCase("zona-rezidentiala"))
-	            return 30 ;
-	        if(opt.equalsIgnoreCase("drum-expres"))
-	            return 100 ;
-	        if(opt.equalsIgnoreCase("autostrada"))
-	            return 130 ;
+	        if(opt.equalsIgnoreCase("oras")) {
+	            return 50 ;}
+	        if(opt.equalsIgnoreCase("zona-rezidentiala")) {
+	            return 30 ;}
+	        if(opt.equalsIgnoreCase("drum-expres")) {
+	            return 100 ;}
+	        if(opt.equalsIgnoreCase("autostrada")) {
+	            return 130 ;}
 
 
 	        return 0;
